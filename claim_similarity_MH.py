@@ -3,7 +3,7 @@ from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 
 # Step 1: Load your dataset (Assumed to be a TSV file with a 'claimReview_claimReviewed' column)
-df = pd.read_csv(r'C:\Users\gangopsa\Documents\claimskg\claimskg-generator-tsv\sebastian_topics\latest_output_topic classification\paper new\claim_similarity_dataset.tsv', sep='\t')
+df = pd.read_csv(r'claim_similarity_dataset.tsv', sep='\t')
 
 # Extract the sentences from the DataFrame
 sentences = df['claimReview_claimReviewed'].tolist()
