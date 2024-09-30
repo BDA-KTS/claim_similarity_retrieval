@@ -46,7 +46,7 @@ This program requires Python 3.x to run.
 Claim/claims similar to the user inputed claim
 ![image](https://github.com/user-attachments/assets/d7cb13fb-c04d-4bb0-a3d0-8fe4ecc536d1)
 
-### mdetox pipeline
+### Method pipeline
 
 Embedding Generation: Each sentence in the dataset is encoded into a vector representation using a pre-trained SentenceTransformer model.
 
