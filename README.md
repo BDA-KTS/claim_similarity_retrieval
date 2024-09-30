@@ -27,7 +27,7 @@ This program requires Python 3.x to run.
 ### How to Use
 1. Run the method using python claim_similarity_MH.py
 2. Method should ask for user input.
-    a) input the sentence similar to which u want to search a claim
+    a) input the sentence similar to which you want to search a claim
    
 
     b)Output should be the relevant claim/claims
@@ -40,10 +40,12 @@ This program requires Python 3.x to run.
 ### Sample Input 
 1. List of claims stored in a dataframe
 2. User input
+   
    ![image](https://github.com/user-attachments/assets/b24d3fc8-733b-4c8c-9ad3-3541580b3c0a)
 
 ### Sample Output
 Claim/claims similar to the user inputed claim
+
 ![image](https://github.com/user-attachments/assets/d7cb13fb-c04d-4bb0-a3d0-8fe4ecc536d1)
 
 ### Method pipeline
