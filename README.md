@@ -15,7 +15,7 @@ James is a researcher focused on studying misinformation in public discourse, pa
 ### Repository Structure
 
 
-mdetox.py - The main file to run the project
+claim_similarity_MH.py - The main file to run the project
 
 ### Environment Setup
 This program requires Python 3.x to run.
