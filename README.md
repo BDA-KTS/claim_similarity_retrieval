@@ -55,11 +55,14 @@ This method requires Python 3.x to run.
 ### Sample Output
 * Claim/claims similar to the user inputed claim
   
+   ´Top 2 most similar claims´
 
-   First Header  | Second Header
-   ------------- | -------------
-   Content Cell  | Content Cell
-   Content Cell  | Content Cell
+   | claimReview_source  | Claim  | Normalised_rating  | Similarity  |
+   |---------------|----------------|---------------|---------------|
+   |checkyourfact  | A video shared on Facebook purports Iowa Repub...   | false  |  0.410853  |
+   | politifact  | Barack Obama supported keeping troops in Iraq,... | mixture  | 0.368890  |
+
+
   
 * The output is also exported to a csv file
   
@@ -77,15 +80,15 @@ The pipeline consists of the following steps:
 
 
 
-Embedding Generation: Each sentence in the dataset is encoded into a vector representation using a pre-trained SentenceTransformer model.
+**Embedding Generation**: Each sentence in the dataset is encoded into a vector representation using a pre-trained SentenceTransformer model.
 
-User Input: The user provides a sentence, which is also encoded into an embedding.
+**User Input**: The user provides a sentence, which is also encoded into an embedding.
 
-Cosine Similarity Calculation: The method calculates the cosine similarity between the user input embedding and the embeddings of all sentences in the dataset.
+**Cosine Similarity Calculation**: The method calculates the cosine similarity between the user input embedding and the embeddings of all sentences in the dataset.
 
-Filtering Results: Sentences with similarity scores above a specified threshold (e.g., 0.85) are filtered out.
+**Filtering Results**: Sentences with similarity scores above a specified threshold (e.g., 0.85) are filtered out.
 
-Output: The filtered sentences are returned as similar sentences to the user input.
+**Output**: The filtered sentences are returned as similar sentences to the user input.
 
 
 
