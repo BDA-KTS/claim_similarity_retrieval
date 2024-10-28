@@ -55,7 +55,7 @@ This method requires Python 3.x to run.
 ### Sample Output
 * Claim/claims similar to the user inputed claim
   
-   ´Top 2 most similar claims´
+   `Top 2 most similar claims`
 
    | claimReview_source  | Claim  | Normalised_rating  | Similarity  |
    |---------------|----------------|---------------|---------------|
