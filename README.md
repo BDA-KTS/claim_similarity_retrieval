@@ -39,14 +39,17 @@ This method requires Python 3.x to run.
 
    
 ### Sample Input 
-1. List of claims stored in a dataframe
+1. List of claims stored in a dataframe .
+    - Sample input : claim_similarity_dataset.tsv already present in the method
+
    
-2. User input
+3. User input
+   
     `Enter a sentence: Joe Biden Donald Trump`
 
     `Enter the number of top similar claims to display (default 3) :2`
    
-   ![image](https://github.com/user-attachments/assets/6445c12f-4b67-406a-bed1-851192d74add)
+
 
 
 ### Sample Output
