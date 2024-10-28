@@ -1,21 +1,23 @@
 # claim_similarity_retrieval
 
 # Description
-This method finds claims in a dataset that are similar to a user-provided sentence by comparing their meanings using advanced language embeddings and returning those with a high similarity score.  
+This method enables fact-checking of arbitrary claims or statements (e.g. taken from online discourse and social media posts). It takes advantage of a unique and constantly updated repository of fact-checked claims mined from the web (ClaimsKG). The method receives an input claim/sentence and returns a set of ranked claims, their relevance scores, veracity ratings and the corresponding fact-check sources.   
 
 ### Keywords
-claim similarity, claim retrieval, embeddings
+verified claims retrieval, semantic similarity, claims ranking
 
 ### Social Science Usecase
 
-James is a researcher focused on studying misinformation in public discourse, particularly during political events. He has gathered a vast dataset of claims made across various media sources, including news articles and social media posts. To effectively analyze these claims, he wants to identify similar assertions that may spread false narratives. Using the claim similarity method, James inputs a specific claim related to healthcare reform into the system. The method quickly retrieves a list of similar claims from his dataset, allowing him to compare how different sources present the same information. 
+A social scientist focuses on misinformation in the social media discourse during political events and wants to verify the veracity of a claim a post using the latest ClaimsKG release of verified facts. 
 
 
 
 ### Repository Structure
 
+Files
 
 claim_similarity_MH.py - The main file to run the project
+claim_similarity_dataset.tsv - Sample input dataset
 
 ### Environment Setup
 This program requires Python 3.x to run.
@@ -25,7 +27,7 @@ This program requires Python 3.x to run.
   
 
 ### How to Use
-1. Run the method using python claim_similarity_MH.py
+1. Run the method using : python ### claim_similarity_MH.py
 2. Method should ask for user input.
     a) input the sentence similar to which you want to search a claim
 
@@ -33,12 +35,8 @@ This program requires Python 3.x to run.
    
 
     c)Output should be the relevant claim/claims
+
    
-
-
-
-### Digital Behavioral data
-
 ### Sample Input 
 1. List of claims stored in a dataframe
 2. User input
