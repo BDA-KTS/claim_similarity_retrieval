@@ -40,7 +40,7 @@ This method requires Python 3.x to run.
    
 ### Sample Input 
 1. List of claims stored in a dataframe .
-    - Sample input : claim_similarity_dataset.tsv already present in the method
+    - For example, the claim_similarity_dataset.tsv already present in the **claim_similarity_retrieval** method. 
 
    
 3. User input
@@ -53,9 +53,13 @@ This method requires Python 3.x to run.
 
 
 ### Sample Output
-Claim/claims similar to the user inputed claim
+* Claim/claims similar to the user inputed claim
+  
+* The output is also exported to a csv file
+* 
+  'output exported successfully as output.csv'
 
-  ![image](https://github.com/user-attachments/assets/eb1b2b97-98c9-446b-aa03-be7344fcc40f)
+
 
 
 ### Method pipeline
