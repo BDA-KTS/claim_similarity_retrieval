@@ -11,11 +11,12 @@ verified claims retrieval, semantic similarity, claims ranking
 A social scientist focuses on misinformation in the social media discourse during political events and wants to verify the veracity of a claim a post using the latest ClaimsKG release of verified facts. 
 
 ### Repository Structure
-The repository contains the following Files
+The repository is organised as follows: 
+*Files
 
-1.**claim_similarity_MH.py**: The main file to run the project
+-claim_similarity_MH.py: The main file to run the project
 
-2.**claim_similarity_dataset.tsv**: Sample input dataset
+-claim_similarity_dataset.tsv: Sample input dataset
 
 
  
