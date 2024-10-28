@@ -28,19 +28,19 @@ This method requires Python 3.x to run.
 ### How to Use :To utilize this tutorial effectively, follow these steps
 1. Run the method using the following command: 
    
-Markup :  `python claim_similarity_MH.py`
+   `python claim_similarity_MH.py`
    
-3. Method should ask for user input.
-    a) input the sentence similar to which you want to search a claim
+2. Method should ask for user input.
+     - Input the sentence similar to which you want to search a claim
 
-    b) Input the number of top similar claims
+     - Input the number of top similar claims
    
-
-    c)Output should be the relevant claim/claims
+3. Output is generated as relevant claim/claims
 
    
 ### Sample Input 
 1. List of claims stored in a dataframe
+   
 2. User input
    
    ![image](https://github.com/user-attachments/assets/6445c12f-4b67-406a-bed1-851192d74add)
