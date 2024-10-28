@@ -27,7 +27,9 @@ This method requires Python 3.x to run.
 
 ### How to Use :To utilize this tutorial effectively, follow these steps
 1. Run the method using : **python claim_similarity_MH.py**
-   Markup :  Common text
+   
+Markup :  Common text
+   
 3. Method should ask for user input.
     a) input the sentence similar to which you want to search a claim
 
