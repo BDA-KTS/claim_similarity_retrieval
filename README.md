@@ -42,6 +42,9 @@ This method requires Python 3.x to run.
 1. List of claims stored in a dataframe
    
 2. User input
+    `Enter a sentence: Joe Biden Donald Trump`
+
+    `Enter the number of top similar claims to display (default 3) :2`
    
    ![image](https://github.com/user-attachments/assets/6445c12f-4b67-406a-bed1-851192d74add)
 
