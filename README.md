@@ -54,15 +54,16 @@ This method requires Python 3.x to run.
 
 ### Sample Output
 * Claim/claims similar to the user inputed claim
+  
 
-  First Header  | Second Header
-------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | Content Cell
+   First Header  | Second Header
+   ------------- | -------------
+   Content Cell  | Content Cell
+   Content Cell  | Content Cell
   
 * The output is also exported to a csv file
   
-  'output exported successfully as output.csv'
+  `Output exported successfully as output.csv`
 
 
 
