@@ -25,7 +25,7 @@ This method requires Python 3.x to run.
 
   
 
-### How to Use
+### How to Use :To utilize this tutorial effectively, follow these steps
 1. Run the method using : python claim_similarity_MH.py
 2. Method should ask for user input.
     a) input the sentence similar to which you want to search a claim
@@ -50,6 +50,12 @@ Claim/claims similar to the user inputed claim
 
 
 ### Method pipeline
+
+The pipeline consists of the following steps:
+![image](https://github.com/user-attachments/assets/51b819eb-5faf-4d69-90c0-c16579099c09)
+
+
+
 
 Embedding Generation: Each sentence in the dataset is encoded into a vector representation using a pre-trained SentenceTransformer model.
 
