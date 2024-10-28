@@ -1,6 +1,6 @@
 # claim_similarity_retrieval
 
-# Description
+## Description
 This method enables fact-checking of arbitrary claims or statements (e.g. taken from online discourse and social media posts). It takes advantage of a unique and constantly updated repository of fact-checked claims mined from the web (ClaimsKG). The method receives an input claim/sentence and returns a set of ranked claims, their relevance scores, veracity ratings and the corresponding fact-check sources.   
 
 ### Keywords
@@ -10,7 +10,7 @@ verified claims retrieval, semantic similarity, claims ranking
 
 A social scientist focuses on misinformation in the social media discourse during political events and wants to verify the veracity of a claim a post using the latest ClaimsKG release of verified facts. 
 
-## Repository Structure
+### Repository Structure
 
 Files
 
