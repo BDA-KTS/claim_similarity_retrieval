@@ -15,7 +15,7 @@ The repository is organised as follows:
 
 * Files
   - claim_similarity_MH.py: The main file to run the project
-  - claim_similarity_dataset.tsv: Sample input dataset
+  - claim_similarity_dataset.tsv: Sample input dataset of claims
 
 
  
@@ -31,11 +31,10 @@ This method requires Python 3.x to run.
    `python claim_similarity_MH.py`
    
 2. Method should ask for user input.
-     - Input the sentence similar to which you want to search a claim
+     - Input the name of the file that contains text/input sentences similar to which claims should be fetched
 
-     - Input the number of top similar claims
    
-3. Output is generated as relevant claim/claims
+3. Output is generated as top 3 relevant and similar claims along with their source, veracity level and similarity score
 
    
 ### Sample Input 
@@ -45,28 +44,32 @@ This method requires Python 3.x to run.
    
 3. User input
    
-    `Enter a sentence: Joe Biden Donald Trump`
+    `Enter the name of the input file (CSV or TSV) located in the current directory: input.csv`
 
-    `Enter the number of top similar claims to display (default 3) :2`
-   
+   The input file should look like
 
+   ![image](https://github.com/user-attachments/assets/09539d01-33fc-4c8a-9e56-1039ff90c51e)
 
 
 ### Sample Output
 * Claim/claims similar to the user inputed claim
-  
-   `Top 2 most similar claims`
 
-   | claimReview_source  | Claim  | Normalised_rating  | Similarity  |
-   |---------------|----------------|---------------|---------------|
-   |checkyourfact  | A video shared on Facebook purports Iowa Repub...   | false  |  0.410853  |
-   | politifact  | Barack Obama supported keeping troops in Iraq,... | mixture  | 0.368890  |
+
+   input_sentence          | claimReview_source | claimReview_claimReviewed                                         | normalised_rating | similarity          | message                                                                                              
+------------------------|-------------------|------------------------------------------------------------------|------------------|---------------------|-------------------------------------------------------------------------------------------------------  
+Joe Biden Donal trump   | checkyourfact     | A video shared on Facebook purports...                           | false            | 0.3887              | No claims are found to be very similar (above 0.7), however, the top 3 are displayed.               
+Joe Biden Donal trump   | politifact        | "Barack Obama supported keeping troops...                        | mixture          | 0.3292              | No claims are found to be very similar (above 0.7), however, the top 3 are displayed.               
+Joe Biden Donal trump   | truthorfiction    | "Ivanka Trump quoted Thomas Jefferson to her...                  | other            | 0.2931              | No claims are found to be very similar (above 0.7), however, the top 3 are displayed.               
+Ukraine Russia          | checkyourfact     | A video shared on Facebook claims to show...                     | false            | 0.5271              | No claims are found to be very similar (above 0.7), however, the top 3 are displayed.               
+Ukraine Russia          | africacheck       | "Marburg virus disease unrelated to Covid-19...                 | false            | 0.2993              | No claims are found to be very similar (above 0.7), however, the top 3 are displayed.               
+Ukraine Russia          | checkyourfact     | A video shared on Facebook claims to show a...                  | false            | 0.2972              | No claims are found to be very similar (above 0.7), however, the top 3 are displayed.               
+
 
 
   
 * The output is also exported to a csv file
   
-  `Output exported successfully as output.csv`
+  `Results have been saved to similarity_results.csv`
 
 
 
