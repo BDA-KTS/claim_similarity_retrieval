@@ -16,13 +16,21 @@ A social scientist focuses on misinformation in the social media discourse durin
 
 Files
 
-claim_similarity_MH.py - The main file to run the project
-claim_similarity_dataset.tsv - Sample input dataset
+1. claim_similarity_MH.py - The main file to run the project
+2. claim_similarity_dataset.tsv - Sample input dataset
+
+
+## Repository Structure
+
+- **claim_similarity_MH.py**: The main file to run the project
+
+- **claim_similarity_dataset.tsv**: Sample input dataset
+
+
+ 
 
 ### Environment Setup
-This program requires Python 3.x to run.
-
-
+This method requires Python 3.x to run.
 
   
 
