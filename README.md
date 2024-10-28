@@ -14,9 +14,9 @@ A social scientist focuses on misinformation in the social media discourse durin
 
 Files
 
--**claim_similarity_MH.py**: The main file to run the project
+1.**claim_similarity_MH.py**: The main file to run the project
 
--**claim_similarity_dataset.tsv**: Sample input dataset
+2.**claim_similarity_dataset.tsv**: Sample input dataset
 
 
  
