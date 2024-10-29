@@ -48,16 +48,16 @@ This method requires Python 3.x to run.
 
    The input file should look like
 
-input_sentence  | 
-------------- | 
-Joe Biden Donald Trump  | 
-Ukraine Russia  |  
+                input_sentence  | 
+                ------------- | 
+                Joe Biden Donald Trump  | 
+                Ukraine Russia  |  
 
 
 ### Sample Output
 * Claim/claims similar to the user inputed claim
 
-input_sentence | claimReview_source | claimReview_claimReviewed| normalised_rating | similarity| message                                                                                              
+input_sentence | claimReview_source | claimReview_claimReviewed| normalised_rating <div style="width:290px">normalised_rating</div>| similarity| message                                                                                              
 ---------------|-------------------|---------------------------|------------------|---------------------|--------------------  
 Joe Biden Donald trump   | checkyourfact     | A video shared on Facebook purports...                           | false            | 0.3887              | No claims are found to be very similar (above 0.7), however, the top 3 are displayed.               
 Joe Biden Donald trump   | politifact        | "Barack Obama supported keeping troops...                        | mixture          | 0.3292              | No claims are found to be very similar (above 0.7), however, the top 3 are displayed.               
