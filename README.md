@@ -54,6 +54,11 @@ This method requires Python 3.x to run.
                Ukraine Russia  |  
 
 
+
+    input_sentence  | 
+------------- | 
+Content Cell  | 
+Content Cell  | 
 ### Sample Output
 * Claim/claims similar to the user inputed claim
 
