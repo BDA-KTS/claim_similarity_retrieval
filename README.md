@@ -48,7 +48,10 @@ This method requires Python 3.x to run.
 
    The input file should look like
 
-   ![image](https://github.com/user-attachments/assets/09539d01-33fc-4c8a-9e56-1039ff90c51e)
+inout sentence  | 
+------------- | 
+Joe Biden Donald Trump  | 
+Ukraine Russia  |  
 
 
 ### Sample Output
@@ -56,9 +59,9 @@ This method requires Python 3.x to run.
 
 input_sentence | claimReview_source | claimReview_claimReviewed| normalised_rating | similarity| message                                                                                              
 ---------------|-------------------|---------------------------|------------------|---------------------|--------------------  
-Joe Biden Donal trump   | checkyourfact     | A video shared on Facebook purports...                           | false            | 0.3887              | No claims are found to be very similar (above 0.7), however, the top 3 are displayed.               
-Joe Biden Donal trump   | politifact        | "Barack Obama supported keeping troops...                        | mixture          | 0.3292              | No claims are found to be very similar (above 0.7), however, the top 3 are displayed.               
-Joe Biden Donal trump   | truthorfiction    | "Ivanka Trump quoted Thomas Jefferson to her...                  | other            | 0.2931              | No claims are found to be very similar (above 0.7), however, the top 3 are displayed.               
+Joe Biden Donald trump   | checkyourfact     | A video shared on Facebook purports...                           | false            | 0.3887              | No claims are found to be very similar (above 0.7), however, the top 3 are displayed.               
+Joe Biden Donald trump   | politifact        | "Barack Obama supported keeping troops...                        | mixture          | 0.3292              | No claims are found to be very similar (above 0.7), however, the top 3 are displayed.               
+Joe Biden Donald trump   | truthorfiction    | "Ivanka Trump quoted Thomas Jefferson to her...                  | other            | 0.2931              | No claims are found to be very similar (above 0.7), however, the top 3 are displayed.               
 Ukraine Russia          | checkyourfact     | A video shared on Facebook claims to show...                     | false            | 0.5271              | No claims are found to be very similar (above 0.7), however, the top 3 are displayed.               
 Ukraine Russia          | africacheck       | "Marburg virus disease unrelated to Covid-19...                 | false            | 0.2993              | No claims are found to be very similar (above 0.7), however, the top 3 are displayed.               
 Ukraine Russia          | checkyourfact     | A video shared on Facebook claims to show a...                  | false            | 0.2972              | No claims are found to be very similar (above 0.7), however, the top 3 are displayed.               
