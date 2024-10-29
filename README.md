@@ -56,8 +56,8 @@ This method requires Python 3.x to run.
 
 First Header  | Second Header
 ------------- | -------------
-Joe Biden Donald Trump  | Content Cell
- Ukraine Russia  | Content Cell
+Joe Biden Donald Trump  | 
+ Ukraine Russia  | 
 ### Sample Output
 * Claim/claims similar to the user inputed claim
 
