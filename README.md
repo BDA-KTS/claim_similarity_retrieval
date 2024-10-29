@@ -48,16 +48,13 @@ This method requires Python 3.x to run.
 
    The input file should look like
 
-               ** input_sentence**  | 
-                -------------- | 
-       Joe Biden Donald Trump  | 
-               Ukraine Russia  |  
+      
 
 
 | input_sentence       |
 |--------------|
-| Content Cell |
-| Content Cell |
+| Joe Biden Donald Trump |
+| Ukraine Russia |
 
 ### Sample Output
 * Claim/claims similar to the user inputed claim
