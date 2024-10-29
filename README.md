@@ -59,7 +59,7 @@ This method requires Python 3.x to run.
 ### Sample Output
 * Claim/claims similar to the user inputed claim
 
-input_sentence | claimReview_source | claimReview_claimReviewed|  <div style="width:290px">normalised_rating</div>|<div style="width:290px">similarity</div> | message                                                                                              
+input_sentence | claimReview_source | claimReview_claimReviewed|  <div style="width:290px">Rating</div>|<div style="width:290px">Similarity</div> | message                                                                                              
 ---------------|-------------------|---------------------------|------------------|---------------------|--------------------  
 Joe Biden Donald trump   | checkyourfact     | A video shared on Facebook purports...                           | false            | 0.3887              | No claims are found to be very similar (above 0.7), however, the top 3 are displayed.               
 Joe Biden Donald trump   | politifact        | "Barack Obama supported keeping troops...                        | mixture          | 0.3292              | No claims are found to be very similar (above 0.7), however, the top 3 are displayed.               
