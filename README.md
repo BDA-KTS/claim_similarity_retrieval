@@ -49,7 +49,7 @@ This method requires Python 3.x to run.
    The input file should look like
 
                 input_sentence  | 
-                ------------- | 
+                  ------------- | 
                 Joe Biden Donald Trump  | 
                 Ukraine Russia  |  
 
