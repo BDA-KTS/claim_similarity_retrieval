@@ -54,7 +54,7 @@ This method requires Python 3.x to run.
                Ukraine Russia  |  
 
 
-First Header  | Second Header
+First Header  | 
 ------------- | -------------
 Joe Biden Donald Trump  | 
  Ukraine Russia  | 
