@@ -12,7 +12,10 @@ verified claims retrieval, semantic similarity, claims ranking
 
 ### Social Science Usecase
 
-A social scientist focuses on misinformation in the social media discourse during political events and wants to verify the veracity of a claim a post using the latest ClaimsKG release of verified facts. 
+1. A social scientist focuses on misinformation in the social media discourse during political events and wants to verify the veracity of a fact-checked claim .
+2. A social scientist wants to find out if a claim/statement has been fact-checked before.
+3. A social scientist wants to find similar statements/claims that have been previously fact-checked
+
 
 ### Repository Structure
 The repository is organised as follows: 
