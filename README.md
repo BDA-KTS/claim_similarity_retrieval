@@ -1,7 +1,11 @@
 # claim_similarity_retrieval
 
 ## Description
-This method enables fact-checking of arbitrary claims or statements (e.g. taken from online discourse and social media posts). It takes advantage of a unique and constantly updated repository of fact-checked claims mined from the web (ClaimsKG). The method receives an input claim/sentence and returns a set of ranked claims, their relevance scores, veracity ratings and the corresponding fact-check sources.   
+This method enables fact-checking of arbitrary claims or statements (e.g. taken from online discourse and social media posts). It takes advantage of a unique and constantly updated repository of fact-checked claims mined from the web (ClaimsKG).
+
+ClaimsKG structured KnowledgeBase which serves as a registry of claims. The KB is updated at regular intervals. Thea latest release of ClaimsKG contains 74000 claims collected from 13 different fact-checking websites from  the year 1996 to 2023. For more details regarding ClaimsKG like the latest release and related papers, please refer to the official webpage https://data.gesis.org/claimskg/ 
+
+The method receives an input claim/sentence and returns a set of ranked claims, their relevance scores, veracity ratings and the corresponding fact-check sources.   
 
 ### Keywords
 verified claims retrieval, semantic similarity, claims ranking
