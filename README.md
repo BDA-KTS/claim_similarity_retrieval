@@ -53,11 +53,11 @@ The repository is organised as follows:
 
    
 ### Sample Input 
-1. List of claims stored in a dataframe .
+1. Input Dataset - List of claims stored in a dataframe from which claims similar to the input needs to be fetched
     - For example, the claim_similarity_dataset.tsv already present in the **claim_similarity_retrieval** method. 
 
    
-3. User input
+3. User input : The input claim against which similar claims are searched. For example:
    
     `Enter a sentence for similarity check (or press Enter to use a sample sentence)`
 
