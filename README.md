@@ -24,6 +24,7 @@ The repository is organised as follows:
   - claim_similarity_MH.py: The main file to run the project
   - claim_similarity_dataset.tsv: Sample input dataset of claims
   - sample_input.txt - Sample input of a claim that should be entered to the method to compute the similarity
+  - similarity_results.csv - Sample output generated for the sample input file
 
 
  
@@ -31,7 +32,7 @@ The repository is organised as follows:
 ### Environment Setup
  - This method requires Python 3.x to run.
  - It also requires the following python packages to be installed namely pandas,sentence_transformers,sklearn and pickle
- -  `python claim_similarity_MH.py`
+ -  `>pip install -r requirements.txt`
 
 
   
