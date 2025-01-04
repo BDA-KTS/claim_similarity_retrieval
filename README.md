@@ -46,7 +46,7 @@ The repository is organised as follows:
    
 2. Method should ask for user input.
      - Input the text/input sentence similar to which claims should be fetched
-     - If the user doesn't input anything, a default sample sentence is used, and the program informs the user. The default input sentence can be found in the ´sample_input.txt´ file
+     - If the user doesn't input anything, a default sample sentence is used, and the program informs the user. The default input sentence can be found in the `sample_input.txt` file
 
    
 3. Output is generated as top 3 relevant and similar claims along with their source, veracity level and similarity score in a csv file
@@ -57,29 +57,29 @@ There ae two inputs that are expected to be a part of the method
 2. User input : The input claim against which similar claims are searched.
    
 ### Sample Input 
-1.  Sample Input Dataset - The claim_similarity_dataset.tsv already present in the **claim_similarity_retrieval** method. 
+1.  Sample Input Dataset - The `claim_similarity_dataset.tsv` already present in the **claim_similarity_retrieval** method. 
 
    
 2. User input : Input from user should look like
    
     `Enter a sentence for similarity check (or press Enter to use a sample sentence):Musicians Robert Plant and Cher plan to wed at Westminster Abbey in July 2016.`
-### Sample Output
-* Claim/claims similar to the user inputed claim
 
-input_sentence | source | claim|  <div style="width:290px">rating</div>|<div style="width:290px">similarity</div> |                                                                                              
----------------|-------------------|---------------------------|------------------|---------------------|--------------------  
-Musicians Robert Plant and Cher plan to wed at Westminster Abbey in July 2016   | snopes     | Musicians Robert Plant and Cher plan to wed .. false            | 1.0000000000000007                   
-              
-
-
-
-  
-* The output is also exported to a csv file
+### Output Data 
+* The output is exported to a csv file and contains the inout sentence, normalised rating, similarity , claim source, claim reviewed and message if any
   
   `Results have been saved to similarity_results.csv`
+### Sample Output
 
+The program generates a CSV file with the following structure:
 
+| **Input Sentence**                                                   | **Claim Source** | **Claim Reviewed**                                                              | **Normalized Rating** | **Similarity**      | **Message** |
+|-----------------------------------------------------------------------|------------------|----------------------------------------------------------------------------------|------------------------|---------------------|--------------|
+| Musicians Robert Plant and Cher plan to wed at Westminster Abbey in July 2016. | snopes           | Musicians Robert Plant and Cher plan to wed at Westminster Abbey in July 2016.   | false                 | 1.0000000000000007  |              |
+| Musicians Robert Plant and Cher plan to wed at Westminster Abbey in July 2016. | snopes           | Singer and actress Cher died in December 2022 or January 2023.                  | false                 | 0.33357966160385355 |              |
+| Musicians Robert Plant and Cher plan to wed at Westminster Abbey in July 2016. | africacheck      | Melon and maize mixture no remedy for irregular periods and other reproductive conditions | false          | 0.2446109941271205  |              |
 
+The table captures key details of similarity analysis between the input sentence and claims from the dataset.
+               
 
 ### Method pipeline
 
@@ -104,7 +104,7 @@ The pipeline consists of the following steps:
 
 ### Limitation
 
-This method may struggle with nuanced meanings and can be computationally intensive for large datasets.
+This method may struggle with nuanced meanings and can be computationally intensive for large datasets. 
 
 
 
