@@ -76,7 +76,6 @@ The program generates a CSV file with the following structure:
 |-----------------------------------------------------------------------|------------------|----------------------------------------------------------------------------------|------------------------|---------------------|--------------|
 | Musicians Robert Plant and Cher plan to wed at Westminster Abbey in July 2016. | snopes           | Musicians Robert Plant and Cher plan to wed at Westminster Abbey in July 2016.   | false                 | 1.0000000000000007  |              |
 | Musicians Robert Plant and Cher plan to wed at Westminster Abbey in July 2016. | snopes           | Singer and actress Cher died in December 2022 or January 2023.                  | false                 | 0.33357966160385355 |              |
-| Musicians Robert Plant and Cher plan to wed at Westminster Abbey in July 2016. | africacheck      | Melon and maize mixture no remedy for irregular periods and other reproductive conditions | false          | 0.2446109941271205  |              |
 
 The table captures key details of similarity analysis between the input sentence and claims from the dataset.
                
