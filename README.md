@@ -46,7 +46,7 @@ The repository is organised as follows:
    
 2. Method should ask for user input.
      - Input the text/input sentence similar to which claims should be fetched
-     - If the user doesn't input anything, a default sample sentence is used, and the program informs the user. The default input sentence can be found in the sample_input.txt file
+     - If the user doesn't input anything, a default sample sentence is used, and the program informs the user. The default input sentence can be found in the ´sample_input.txt´ file
 
    
 3. Output is generated as top 3 relevant and similar claims along with their source, veracity level and similarity score in a csv file
@@ -62,26 +62,13 @@ The repository is organised as follows:
     `Enter a sentence for similarity check (or press Enter to use a sample sentence)`
 
    The input sentence should look like :`Musicians Robert Plant and Cher plan to wed at Westminster Abbey in July 2016.`
-
-      
-
-
-| input_sentence       |
-|--------------|
-| Joe Biden Donald Trump |
-| Ukraine Russia |
-
 ### Sample Output
 * Claim/claims similar to the user inputed claim
 
-input_sentence | source | claim|  <div style="width:290px">rating</div>|<div style="width:290px">similarity</div> | message                                                                                              
+input_sentence | source | claim|  <div style="width:290px">rating</div>|<div style="width:290px">similarity</div> |                                                                                              
 ---------------|-------------------|---------------------------|------------------|---------------------|--------------------  
-Joe Biden Donald trump   | checkyourfact     | A video shared on Facebook purports...                           | false            | 0.3887              | No claims are found to be very similar (above 0.7), however, the top 3 are displayed.               
-Joe Biden Donald trump   | politifact        | "Barack Obama supported keeping troops...                        | mixture          | 0.3292              | No claims are found to be very similar (above 0.7), however, the top 3 are displayed.               
-Joe Biden Donald trump   | truthorfiction    | "Ivanka Trump quoted Thomas Jefferson to her...                  | other            | 0.2931              | No claims are found to be very similar (above 0.7), however, the top 3 are displayed.               
-Ukraine Russia          | checkyourfact     | A video shared on Facebook claims to show...                     | false            | 0.5271              | No claims are found to be very similar (above 0.7), however, the top 3 are displayed.               
-Ukraine Russia          | africacheck       | "Marburg virus disease unrelated to Covid-19...                 | false            | 0.2993              | No claims are found to be very similar (above 0.7), however, the top 3 are displayed.               
-Ukraine Russia          | checkyourfact     | A video shared on Facebook claims to show a...                  | false            | 0.2972              | No claims are found to be very similar (above 0.7), however, the top 3 are displayed.               
+Musicians Robert Plant and Cher plan to wed at Westminster Abbey in July 2016   | snopes     | Musicians Robert Plant and Cher plan to wed .. false            | 1.0000000000000007                   
+              
 
 
 
