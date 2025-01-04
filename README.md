@@ -45,10 +45,11 @@ The repository is organised as follows:
    `python claim_similarity_MH.py`
    
 2. Method should ask for user input.
-     - Input the name of the file that contains text/input sentences similar to which claims should be fetched
+     - Input the text/input sentence similar to which claims should be fetched
+     - If the user doesn't input anything, a default sample sentence is used, and the program informs the user. The default input sentence can be found in the sample_input.txt file
 
    
-3. Output is generated as top 3 relevant and similar claims along with their source, veracity level and similarity score
+3. Output is generated as top 3 relevant and similar claims along with their source, veracity level and similarity score in a csv file
 
    
 ### Sample Input 
@@ -58,9 +59,9 @@ The repository is organised as follows:
    
 3. User input
    
-    `Enter the name of the input file (CSV or TSV) located in the current directory: input.csv`
+    `Enter a sentence for similarity check (or press Enter to use a sample sentence)`
 
-   The input file should look like
+   The input sentence should look like :`Musicians Robert Plant and Cher plan to wed at Westminster Abbey in July 2016.`
 
       
 
