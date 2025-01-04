@@ -23,44 +23,44 @@ if 'embeddings' not in df.columns:
 # Step 4: Load the dataset with embeddings safely
 df = pd.read_pickle('claims_with_embeddings.pkl')
 
-# Step 5: Load the file with input sentences by filename only
-input_filename = input("Enter the name of the input file (CSV or TSV) located in the current directory: ")
-input_file_path = os.path.join(os.getcwd(), input_filename)
+# Step 5: Get a single input sentence from the user or use a sample sentence
+user_input = input("Enter a sentence for similarity check (or press Enter to use a sample sentence): ").strip()
 
-input_df = pd.read_csv(input_file_path, sep=',' if input_filename.endswith('.csv') else '\t')
-input_df['input_sentence'] = input_df['input_sentence'].str.replace('\x00', '', regex=True)
+if not user_input:
+    user_sentence = "The daughter of U.S. Vice President Dick Cheney went to Iraq to become a human shield"
+    print(f"No input provided. Using the sample sentence: '{user_sentence}'")
+else:
+    user_sentence = user_input
 
-# Step 6: Process each input sentence, calculate similarity, and store results
+# Step 6: Process the input sentence, calculate similarity, and store results
 results = []
 
-# Set the default number of top claims to display
-top_x = 3
+# Encode the user's sentence
+user_embedding = model.encode(user_sentence)
 
-for _, row in input_df.iterrows():
-    user_sentence = row['input_sentence']
-    user_embedding = model.encode(user_sentence)
-    
-    # Calculate cosine similarity between user input and each claim in the dataset
-    df['similarity'] = df['embeddings'].apply(lambda x: cosine_similarity([x], [user_embedding])[0][0])
-    
-    # Sort claims by similarity and get top results
-    top_similar_claims = df.sort_values(by='similarity', ascending=False).head(top_x)
-    
-    # Check if the highest similarity is above 0.7 and prepare the results
-    if top_similar_claims.iloc[0]['similarity'] < 0.7:
-        message = "No claims are found to be very similar (above 0.7), however, the most similar ones are displayed."
-    else:
-        message = ""
-    
-    # Collect the results for each input sentence
-    for _, claim_row in top_similar_claims.iterrows():
-        results.append({
-            'input_sentence': user_sentence,
-            'claimReview_source': claim_row['claimReview_source'],
-            'claimReview_claimReviewed': claim_row['claimReview_claimReviewed'],
-            'similarity': claim_row['similarity'],
-            'message': message
-        })
+# Calculate cosine similarity between user input and each claim in the dataset
+df['similarity'] = df['embeddings'].apply(lambda x: cosine_similarity([x], [user_embedding])[0][0])
+
+# Sort claims by similarity and get top results
+top_x = 3
+top_similar_claims = df.sort_values(by='similarity', ascending=False).head(top_x)
+
+# Check if the highest similarity is above 0.7 and prepare the results
+if top_similar_claims.iloc[0]['similarity'] < 0.7:
+    message = "No claims are found to be very similar (above 0.7), however, the most similar ones are displayed."
+else:
+    message = ""
+
+# Collect the results for the input sentence
+for _, claim_row in top_similar_claims.iterrows():
+    results.append({
+        'input_sentence': user_sentence,
+        'claimReview_source': claim_row['claimReview_source'],
+        'claimReview_claimReviewed': claim_row['claimReview_claimReviewed'],
+        'normalised_rating': claim_row['normalised_rating'],
+        'similarity': claim_row['similarity'],
+        'message': message
+    })
 
 # Step 7: Output results to a CSV file
 output_df = pd.DataFrame(results)
