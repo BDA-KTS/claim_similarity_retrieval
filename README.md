@@ -51,17 +51,18 @@ The repository is organised as follows:
    
 3. Output is generated as top 3 relevant and similar claims along with their source, veracity level and similarity score in a csv file
 
+### Input Data 
+There ae two inputs that are expected to be a part of the method
+1. Input Dataset - List of claims stored in a dataframe from which claims similar to the input needs to be fetched
+2. User input : The input claim against which similar claims are searched.
    
 ### Sample Input 
-1. Input Dataset - List of claims stored in a dataframe from which claims similar to the input needs to be fetched
-    - For example, the claim_similarity_dataset.tsv already present in the **claim_similarity_retrieval** method. 
+1.  Sample Input Dataset - The claim_similarity_dataset.tsv already present in the **claim_similarity_retrieval** method. 
 
    
-3. User input : The input claim against which similar claims are searched. For example:
+2. User input : Input from user should look like
    
-    `Enter a sentence for similarity check (or press Enter to use a sample sentence)`
-
-   The input sentence should look like :`Musicians Robert Plant and Cher plan to wed at Westminster Abbey in July 2016.`
+    `Enter a sentence for similarity check (or press Enter to use a sample sentence):Musicians Robert Plant and Cher plan to wed at Westminster Abbey in July 2016.`
 ### Sample Output
 * Claim/claims similar to the user inputed claim
 
