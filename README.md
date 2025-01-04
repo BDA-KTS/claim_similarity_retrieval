@@ -22,10 +22,10 @@ The repository is organised as follows:
 
 * Files
   - claim_similarity_MH.py: The main file to run the project
-  - claim_similarity_dataset.tsv: Sample input dataset of claims
+  - claim_similarity_dataset.tsv: Dataset of claims
   - sample_input.txt - Sample input of a claim that should be entered to the method to compute the similarity
   - similarity_results.csv - Sample output generated for the sample input file
-  - requirements.txt - text file listing mandatory python packages
+  - requirements.txt - Text file listing mandatory python packages
 
 
  
