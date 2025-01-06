@@ -31,7 +31,7 @@ The repository is organised as follows:
  
 
 ### Environment Setup
- - This method requires Python 3.x to run.
+ - This method requires Python 3.9 to run.
  - It also requires the following python packages to be installed namely pandas,sentence_transformers,sklearn and pickle.
  - Sample installation through requirements file
     `>pip install -r requirements.txt`
