@@ -58,15 +58,15 @@ There are two inputs that are expected to be a part of the method
 2. User input: The input claim against which similar claims are searched.
    
 ### Sample Input 
-1. Input Dataset - The `claim_similarity_dataset.tsv` already present in the **claim_similarity_retrieval** method. 
+1. Input Dataset: The [claim_similarity_dataset.tsv](laim_similarity_dataset.tsv) already present in the **claim_similarity_retrieval** method. 
 
    
-2. User input: The user input can be recieved from the file `https://github.com/BDA-KTS/claim_similarity_retrieval/blob/main/sample_input.txt`
+2. User input: The user input can be provided either by entering it when the script prompts for it or through the file [sample_input.txt](sample_input.txt)
    
-    `Enter a sentence for similarity check (or press Enter to use a sample sentence):Musicians Robert Plant and Cher plan to wed at Westminster Abbey in July 2016.`
+    `Enter a sentence for similarity check (or press Enter to use a sample sentence): Musicians Robert Plant and Cher plan to wed at Westminster Abbey in July 2016.`
 
 ### Output Data 
-* The output is exported to a csv file and contains the inout sentence, normalised rating, similarity , claim source, claim reviewed and message if any
+* The output is exported to a csv file [similarity_results.csv](similarity_results.csv) and contains the input sentence, normalised rating, similarity , claim source, claim reviewed and message if any
   
   `Results have been saved to similarity_results.csv`
 ### Sample Output
