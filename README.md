@@ -26,17 +26,17 @@ The pipeline consists of the following steps:
 
 **Output**: The filtered sentences are returned as similar sentences to the user input.
 
-### Keywords
+## Keywords
 verified claims retrieval, semantic similarity, claims ranking
 
-### Social Science Usecase
+## Social Science Usecase
 
 1. A social scientist focuses on misinformation in the social media discourse during political events and wants to verify the veracity of a fact-checked claim .
 2. A social scientist wants to find out if a claim/statement has been fact-checked before.
 3. A social scientist wants to find similar statements/claims that have been previously fact-checked
 
 
-### Repository Structure
+## Repository Structure
 The repository is organised as follows: 
 
 * Files
@@ -49,7 +49,7 @@ The repository is organised as follows:
 
  
 
-### Environment Setup
+## Environment Setup
  - This method requires Python 3.9 to run.
  - It also requires the following python packages to be installed namely pandas,sentence_transformers,sklearn and pickle.
  - Sample installation through requirements file
@@ -58,7 +58,7 @@ The repository is organised as follows:
 
   
 
-### How to Use
+## How to Use
 To utilize this tutorial effectively, follow these steps
 1. Run the method using the following command: 
    
@@ -71,7 +71,7 @@ To utilize this tutorial effectively, follow these steps
    
 3. Output is generated as top 3 relevant and similar claims along with their source, veracity level and similarity score in a csv file
 
-### Input Data 
+## Input Data 
 There are two inputs that are expected to be a part of the method
 1. Input Dataset: A dataframe containing a list of claims, from which claims similar to the input must be retrieved.
 2. User input: The input claim against which similar claims are searched.
@@ -84,11 +84,11 @@ There are two inputs that are expected to be a part of the method
    
     `Enter a sentence for similarity check (or press Enter to use a sample sentence): Musicians Robert Plant and Cher plan to wed at Westminster Abbey in July 2016.`
 
-### Output Data 
+## Output Data 
 * The output is exported to a csv file [similarity_results.csv](similarity_results.csv) and contains the input sentence, normalised rating, similarity , claim source, claim reviewed and message if any
   
   `Results have been saved to similarity_results.csv`
-### Sample Output
+## Sample Output
 
 The program generates a CSV file with the following structure:
 
@@ -103,7 +103,7 @@ The table captures key details of similarity analysis between the input sentence
 
 
 
-### Limitation
+## Limitation
 
 This method may struggle with nuanced meanings and can be computationally intensive for large datasets. 
 
