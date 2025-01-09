@@ -39,7 +39,8 @@ The repository is organised as follows:
 
   
 
-### How to Use :To utilize this tutorial effectively, follow these steps
+### How to Use
+To utilize this tutorial effectively, follow these steps
 1. Run the method using the following command: 
    
    `python claim_similarity_MH.py`
