@@ -53,8 +53,8 @@ To utilize this tutorial effectively, follow these steps
 3. Output is generated as top 3 relevant and similar claims along with their source, veracity level and similarity score in a csv file
 
 ### Input Data 
-There ae two inputs that are expected to be a part of the method
-1. Input Dataset: List of claims stored in a dataframe from which claims similar to the input needs to be fetched
+There are two inputs that are expected to be a part of the method
+1. Input Dataset: A dataframe containing a list of claims, from which claims similar to the input must be retrieved.
 2. User input: The input claim against which similar claims are searched.
    
 ### Sample Input 
