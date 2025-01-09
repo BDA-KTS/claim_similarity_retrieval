@@ -5,7 +5,26 @@ This method enables retrieval or searching of fact-checked claims or statements 
 
 ClaimsKG is a structured KnowledgeBase which serves as a registry of claims. The KB is updated at regular intervals. Thea latest release of ClaimsKG contains 74000 claims collected from 13 different fact-checking websites from  the year 1996 to 2023. For more details regarding ClaimsKG like the latest release and related papers, please refer to the official webpage https://data.gesis.org/claimskg/ 
 
-The method receives an input claim/sentence , computes similarity with 74000 previously fact-checked claims from ClaimsKG and returns a set of ranked claims from , their relevance scores, veracity ratings and the corresponding fact-check sources.   
+The method receives an input claim/sentence , computes similarity with 74000 previously fact-checked claims from ClaimsKG and returns a set of ranked claims from , their relevance scores, veracity ratings and the corresponding fact-check sources.  
+
+# Method pipeline
+
+The pipeline consists of the following steps:
+![image](https://github.com/user-attachments/assets/b7040304-6db7-4099-83ce-2d498a469f45)
+
+
+
+
+
+**Embedding Generation**: Each sentence in the dataset is encoded into a vector representation using a pre-trained SentenceTransformer model.
+
+**User Input**: The user provides a sentence, which is also encoded into an embedding.
+
+**Cosine Similarity Calculation**: The method calculates the cosine similarity between the user input embedding and the embeddings of all sentences in the dataset.
+
+**Filtering Results**: Sentences with similarity scores above a specified threshold (e.g., 0.85) are filtered out.
+
+**Output**: The filtered sentences are returned as similar sentences to the user input.
 
 ### Keywords
 verified claims retrieval, semantic similarity, claims ranking
@@ -81,24 +100,6 @@ The program generates a CSV file with the following structure:
 The table captures key details of similarity analysis between the input sentence and claims from the dataset.
                
 
-### Method pipeline
-
-The pipeline consists of the following steps:
-![image](https://github.com/user-attachments/assets/b7040304-6db7-4099-83ce-2d498a469f45)
-
-
-
-
-
-**Embedding Generation**: Each sentence in the dataset is encoded into a vector representation using a pre-trained SentenceTransformer model.
-
-**User Input**: The user provides a sentence, which is also encoded into an embedding.
-
-**Cosine Similarity Calculation**: The method calculates the cosine similarity between the user input embedding and the embeddings of all sentences in the dataset.
-
-**Filtering Results**: Sentences with similarity scores above a specified threshold (e.g., 0.85) are filtered out.
-
-**Output**: The filtered sentences are returned as similar sentences to the user input.
 
 
 
