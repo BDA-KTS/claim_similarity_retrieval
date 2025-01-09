@@ -45,7 +45,7 @@ To utilize this tutorial effectively, follow these steps
    
    `python claim_similarity_MH.py`
    
-2. Method should ask for user input.
+2. Method will ask for user input.
      - Input the text/input sentence similar to which claims should be fetched
      - If the user doesn't input anything, a default sample sentence is used, and the program informs the user. The default input sentence can be found in the [sample_input.txt](sample_input.txt) file
 
