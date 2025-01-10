@@ -7,7 +7,7 @@ ClaimsKG is a structured KnowledgeBase which serves as a registry of claims. The
 
 The method receives an input claim/sentence , computes similarity with 74000 previously fact-checked claims from ClaimsKG and returns a set of ranked claims from , their relevance scores, veracity ratings and the corresponding fact-check sources.  
 
-### Method pipeline
+### Method Pipeline
 
 The pipeline consists of the following steps:
 ![image](https://github.com/user-attachments/assets/b7040304-6db7-4099-83ce-2d498a469f45)
