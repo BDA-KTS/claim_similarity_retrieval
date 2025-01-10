@@ -1,4 +1,4 @@
-# claim_similarity_retrieval
+# Fact-Checked Claim Retrieval
 
 ## Description
 This method enables retrieval or searching of fact-checked claims or statements (e.g. taken from online discourse and social media posts). It takes advantage of a unique repository of fact-checked claims mined from the web presented through ClaimsKG which is updated on regular intervals.
