@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Gangopadhyay
+    given-names: Susmita
+title: "Fact-Checked Claim Retrieval"
+version: 1.0
+identifiers:
+  - type: 
+    value: 
+date-released: 2024-11-26
