@@ -90,7 +90,7 @@ There are two inputs that are expected to be a part of the method
 * The output is exported to a csv file [similarity_results.csv](https://github.com/BDA-KTS/claim_similarity_retrieval/blob/main/similarity_results.csv) and contains the input sentence, normalised rating, similarity , claim source, claim reviewed and message if any
   
   `Results have been saved to similarity_results.csv`
-## Sample Output
+### Sample Output
 
 The program generates a CSV file with the following structure:
 
