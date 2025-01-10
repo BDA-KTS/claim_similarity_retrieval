@@ -40,7 +40,7 @@ verified claims retrieval, semantic similarity, claims ranking
 The repository is organised as follows: 
 
 * Files
-  - claim_similarity_MH.py: The main file to run the project
+  - claim_retrieval.py: The main file to run the project
   - claim_similarity_dataset.tsv: Dataset of claims
   - sample_input.txt - Sample input of a claim that should be entered to the method to compute the similarity
   - similarity_results.csv - Sample output generated for the sample input file
@@ -62,7 +62,7 @@ The repository is organised as follows:
 To utilize this tutorial effectively, follow these steps
 1. Run the method using the following command: 
    
-   `python claim_similarity_MH.py`
+   `python claim_retrieval.py`
    
 2. Method will ask for user input.
      - Input the text/input sentence similar to which claims should be fetched
