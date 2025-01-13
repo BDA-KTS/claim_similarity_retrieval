@@ -10,7 +10,7 @@ The method receives an input claim/sentence , computes similarity with 74000 pre
 ### Method Pipeline
 
 The pipeline consists of the following steps:
-![image](https://github.com/user-attachments/assets/b7040304-6db7-4099-83ce-2d498a469f45)
+![image](https://github.com/BDA-KTS/claim_similarity_retrieval/blob/main/pipeline.png)
 
 
 
