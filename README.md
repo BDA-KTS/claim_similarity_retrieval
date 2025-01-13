@@ -88,9 +88,7 @@ There are two inputs that are expected to be a part of the method
    or through the file [sample_input.txt](https://github.com/BDA-KTS/claim_similarity_retrieval/blob/main/sample_input.txt)
 
 ## Output Data 
-* The output is exported to a csv file [similarity_results.csv](https://github.com/BDA-KTS/claim_similarity_retrieval/blob/main/similarity_results.csv) and contains the input sentence, normalised rating, similarity , claim source, claim reviewed and message if any
-  
-  `Results have been saved to similarity_results.csv`
+* The output is exported to a csv file [similarity_results.csv](https://github.com/BDA-KTS/claim_similarity_retrieval/blob/main/similarity_results.csv) and contains the input sentence, normalised rating, similarity , claim source, claim reviewed and message if any.
   
 ### Sample Output
 
