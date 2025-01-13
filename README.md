@@ -53,7 +53,8 @@ The repository is organised as follows:
  - This method requires Python 3.9 to run.
  - It also requires the following python packages to be installed namely pandas,sentence_transformers,sklearn and pickle.
  - Sample installation through requirements file
-    `>pip install -r requirements.txt`
+   
+    `pip install -r requirements.txt`
 
 
   
@@ -90,6 +91,7 @@ There are two inputs that are expected to be a part of the method
 * The output is exported to a csv file [similarity_results.csv](https://github.com/BDA-KTS/claim_similarity_retrieval/blob/main/similarity_results.csv) and contains the input sentence, normalised rating, similarity , claim source, claim reviewed and message if any
   
   `Results have been saved to similarity_results.csv`
+  
 ### Sample Output
 
 The program generates a CSV file with the following structure:
