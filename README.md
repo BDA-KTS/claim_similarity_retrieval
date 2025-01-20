@@ -15,7 +15,7 @@ This tool provides a practical solution for verifying information, combating mis
 Using the **paraphrase-MiniLM-L6-v2** model ensures reproducibility by providing a standardized, pre-trained, and widely used model that generates consistent sentence embeddings. This version is deterministic, meaning the same input will always produce the same output, regardless of the environment, as long as the model version remains the same. It is publicly available, easy to load from Github, and documented for clarity, making it straightforward for others to replicate experiments and results with the same setup.
 
 
-## Social Science Usecase
+## Social Science Use Case(s)
 
 1. A social scientist focuses on misinformation in the social media discourse during political events and wants to verify the veracity of a fact-checked claim.
 2. A social scientist wants to find out if a claim/statement has been fact-checked before.
