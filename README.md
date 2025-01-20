@@ -87,14 +87,11 @@ The program generates a CSV file with the following structure:
 
 The table captures key details of similarity analysis between the input sentence and claims from the dataset.
                
-
-
-
-
 ## Limitation
 This method may struggle with nuanced meanings and can be computationally intensive for large datasets. 
 
-
+## Publication
+- Gangopadhyay, S., Boland, K., Dessí, D., Dietze, S., Fafalios, P., Tchechmedjiev, A., ... & Jabeen, H. (2023, May). Truth or dare: Investigating claims truthfulness with claimskg. In D2R2 2023-2nd International Workshop on Linked Data-driven Resilience Research (Vol. 3401).
 
 ## Contact
 For questions or feedback, contact Susmita Gangopadhyay via [Susmita.Gangopadhyay@gesis.org](mailto: Susmita.Gangopadhyay@gesis.org).
