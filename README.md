@@ -7,7 +7,7 @@ This method enables the retrieval of fact-checked claims or statements, making i
 
 The method takes an input claim or sentence from the user, computes its similarity with the fact-checked claims in ClaimsKG, and returns a ranked list of matching claims. The results include relevance scores, veracity ratings, and references to the original fact-check sources.
 
-The similarity between the input sentence and the claims in ClaimsKG is calculated using Cosine Similarity. This involves comparing the embedding representations of the input and the claims, ensuring accurate and efficient retrieval of relevant fact-checked information.
+The similarity between the input sentence and the claims in ClaimsKG is calculated using [cosine similarity](https://en.wikipedia.org/wiki/Cosine_similarity). This involves comparing the embedding representations of the input and the claims, ensuring accurate and efficient retrieval of relevant fact-checked information.
 
 This tool provides a practical solution for verifying information, combating misinformation, and supporting research in the field of online content validation.
 
