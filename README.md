@@ -17,13 +17,13 @@ Using the **paraphrase-MiniLM-L6-v2** model ensures reproducibility by providing
 
 ## Social Science Usecase
 
-1. A social scientist focuses on misinformation in the social media discourse during political events and wants to verify the veracity of a fact-checked claim .
+1. A social scientist focuses on misinformation in the social media discourse during political events and wants to verify the veracity of a fact-checked claim.
 2. A social scientist wants to find out if a claim/statement has been fact-checked before.
 3. A social scientist wants to find similar statements/claims that have been previously fact-checked
 
 
 ## Repository Structure
-The repository is organised as follows: 
+The repository is organized as follows: 
 
 * Files
   - [claim_similarity_retrieval.py](https://github.com/BDA-KTS/claim_similarity_retrieval/blob/main/claim_similarity_retrieval.py): The main file to run the project
@@ -37,7 +37,7 @@ The repository is organised as follows:
 
 ## Environment Setup
  - This method requires Python 3.9 to run.
- - It also requires the following python packages to be installed namely pandas,sentence_transformers,sklearn and pickle.
+ - It also requires the following Python packages to be installed namely pandas, sentence_transformers, sklearn, and pickle.
  - Sample installation through requirements file
    
     `pip install -r requirements.txt`
@@ -51,16 +51,16 @@ To utilize this tutorial effectively, follow these steps
    
    `python claim_similarity_retrieval.py`
    
-2. Method will ask for user input.
+2. The method will ask for user input.
      - Input the text/input sentence similar to which claims should be fetched
      - If the user doesn't input anything, a default sample sentence is used, and the program informs the user. The default input sentence can be found in the [sample_input.txt](https://github.com/BDA-KTS/claim_similarity_retrieval/blob/main/sample_input.txt) file
 
    
-3. Output is generated as top 3 relevant and similar claims along with their source, veracity level and similarity score in a csv file
+3. Output is generated as the top 3 relevant and similar claims along with their source, veracity level, and similarity score in a CSV file
 
 ## Input Data 
 There are two inputs that are expected to be a part of the method
-1. Input Dataset: A dataframe containing a list of claims, from which claims similar to the input must be retrieved.
+1. Input Dataset: A data frame containing a list of claims, from which claims similar to the input must be retrieved.
 2. User input: The input claim against which similar claims are searched.
    
 ### Sample Input 
@@ -74,7 +74,7 @@ There are two inputs that are expected to be a part of the method
    or through the file [sample_input.txt](https://github.com/BDA-KTS/claim_similarity_retrieval/blob/main/sample_input.txt)
 
 ## Output Data 
-* The output is exported to a csv file [similarity_results.csv](https://github.com/BDA-KTS/claim_similarity_retrieval/blob/main/similarity_results.csv) and contains the input sentence, normalised rating, similarity , claim source, claim reviewed and message if any.
+* The output is exported to a CSV file [similarity_results.csv](https://github.com/BDA-KTS/claim_similarity_retrieval/blob/main/similarity_results.csv) and contains the input sentence, normalized rating, similarity, claim source, claim reviewed and message if any.
   
 ### Sample Output
 
