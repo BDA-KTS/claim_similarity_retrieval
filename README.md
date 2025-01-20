@@ -10,10 +10,6 @@ The method receives an input claim/sentence , computes similarity with 74000 pre
 ### Method Pipeline
 
 The pipeline consists of the following steps:
-![image](https://github.com/BDA-KTS/claim_similarity_retrieval/blob/main/pipeline.png)
-
-
-
 
 
 **Embedding Generation**: Each sentence in the dataset is encoded into a vector representation using a pre-trained SentenceTransformer model.
