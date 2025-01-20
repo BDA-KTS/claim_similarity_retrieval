@@ -1,29 +1,16 @@
 # Fact-Checked Claim Retrieval
 
 ## Description
-This method enables retrieval or searching of fact-checked claims or statements (e.g. taken from online discourse and social media posts). It takes advantage of a unique repository of fact-checked claims mined from the web presented through ClaimsKG which is updated on regular intervals.
-
-ClaimsKG is a structured KnowledgeBase which serves as a registry of claims. The KB is updated at regular intervals. Thea latest release of ClaimsKG contains 74000 claims collected from 13 different fact-checking websites from  the year 1996 to 2023. For more details regarding ClaimsKG like the latest release and related papers, please refer to the official webpage https://data.gesis.org/claimskg/ 
-
-The method receives an input claim/sentence , computes similarity with 74000 previously fact-checked claims from ClaimsKG and returns a set of ranked claims from , their relevance scores, veracity ratings and the corresponding fact-check sources.  
-
-### Method Pipeline
-
-The pipeline consists of the following steps:
 
 
-**Embedding Generation**: Each sentence in the dataset is encoded into a vector representation using a pre-trained SentenceTransformer model.
+This method enables the retrieval of fact-checked claims or statements, making it particularly useful for analyzing online discourse and social media posts. It leverages ClaimsKG, a structured knowledge base that serves as a registry of fact-checked claims mined from the web. The database is regularly updated, with the latest release containing over 74,000 claims from 13 different fact-checking websites spanning 1996 to 2023. For detailed information about ClaimsKG, including its latest release and related publications, visit the [official webpage](https://data.gesis.org/claimskg/).
 
-**User Input**: The user provides a sentence, which is also encoded into an embedding.
+The method takes an input claim or sentence from the user, computes its similarity with the fact-checked claims in ClaimsKG, and returns a ranked list of matching claims. The results include relevance scores, veracity ratings, and references to the original fact-check sources.
 
-**Cosine Similarity Calculation**: The method calculates the cosine similarity between the user input embedding and the embeddings of all sentences in the dataset.
+The similarity between the input sentence and the claims in ClaimsKG is calculated using Cosine Similarity. This involves comparing the embedding representations of the input and the claims, ensuring accurate and efficient retrieval of relevant fact-checked information.
 
-**Filtering Results**: Sentences with similarity scores above a specified threshold (e.g., 0.85) are filtered out.
+This tool provides a practical solution for verifying information, combating misinformation, and supporting research in the field of online content validation.
 
-**Output**: The filtered sentences are returned as similar sentences to the user input.
-
-## Keywords
-verified claims retrieval, semantic similarity, claims ranking
 
 ## Social Science Usecase
 
