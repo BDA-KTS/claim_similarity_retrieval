@@ -60,21 +60,19 @@ To utilize this tutorial effectively, follow these steps
 
 ## Input Data 
 There are two inputs that are expected to be a part of the method
-1. Input Dataset: A data frame containing a list of claims, from which claims similar to the input must be retrieved.
-2. User input: The input claim against which similar claims are searched.
+1. Source dataset: A collection of claims to retrieve similar claims from, for given user query. The default is [claim_similarity_dataset.tsv](https://github.com/BDA-KTS/claim_similarity_retrieval/blob/main/claim_similarity_dataset.tsv). 
+2. User input query: The inputs a query against which similar claims are searched in the source dataset.
    
 ### Sample Input 
-1. Input Dataset: The [claim_similarity_dataset.tsv](https://github.com/BDA-KTS/claim_similarity_retrieval/blob/main/claim_similarity_dataset.tsv) already present in the **claim_similarity_retrieval** method. 
-
-   
-2. User input: The user input can be provided either by entering it when the script prompts for it:
+1. Source dataset: The [claim_similarity_dataset.tsv](https://github.com/BDA-KTS/claim_similarity_retrieval/blob/main/claim_similarity_dataset.tsv) already present in the **claim_similarity_retrieval** method. 
+2. User input query: The user input query can be provided either by entering it when the script prompts for it:
    
     `Enter a sentence for similarity check (or press Enter to use a sample sentence): Musicians Robert Plant and Cher plan to wed at Westminster Abbey in July 2016.`
    
    or through the file [sample_input.txt](https://github.com/BDA-KTS/claim_similarity_retrieval/blob/main/sample_input.txt)
 
 ## Output Data 
-* The output is exported to a CSV file [similarity_results.csv](https://github.com/BDA-KTS/claim_similarity_retrieval/blob/main/similarity_results.csv) and contains the input sentence, normalized rating, similarity, claim source, claim reviewed and message if any.
+* The output is exported to a CSV file [similarity_results.csv](https://github.com/BDA-KTS/claim_similarity_retrieval/blob/main/similarity_results.csv) and contains the input sentence, normalized rating, similarity scores, claims source, claims reviewed, and messages if any.
   
 ### Sample Output
 
@@ -92,7 +90,6 @@ The table captures key details of similarity analysis between the input sentence
 
 
 ## Limitation
-
 This method may struggle with nuanced meanings and can be computationally intensive for large datasets. 
 
 
