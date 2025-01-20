@@ -8,11 +8,11 @@ This method enables the retrieval of fact-checked claims or statements, making i
 The method takes an input claim or sentence from the user, computes its similarity with the fact-checked claims in ClaimsKG, and returns a ranked list of matching claims. The results include relevance scores, veracity ratings, and references to the original fact-check sources.
 
 The similarity between the input sentence and the claims in ClaimsKG is calculated using Cosine Similarity. This involves comparing the embedding representations of the input and the claims, ensuring accurate and efficient retrieval of relevant fact-checked information.
-The embedding model used in this method is [SentenceTransformer](https://github.com/UKPLab/sentence-transformers) with the [paraphrase-MiniLM-L6-v2](https://www.sbert.net/docs/sentence_transformer/pretrained_models.html) pre-trained model.
 
 This tool provides a practical solution for verifying information, combating misinformation, and supporting research in the field of online content validation.
 
-**Reproducibility:** Using the **paraphrase-MiniLM-L6-v2** model ensures reproducibility by providing a standardized, pre-trained, and widely used model that generates consistent sentence embeddings. This version is deterministic, meaning the same input will always produce the same output, regardless of the environment, as long as the model version remains the same. It is publicly available, easy to load from Github, and documented for clarity, making it straightforward for others to replicate experiments and results with the same setup.
+**Reproducibility:** The embedding model used in this method is [SentenceTransformer](https://github.com/UKPLab/sentence-transformers) with the [paraphrase-MiniLM-L6-v2](https://www.sbert.net/docs/sentence_transformer/pretrained_models.html) pre-trained model.
+Using the **paraphrase-MiniLM-L6-v2** model ensures reproducibility by providing a standardized, pre-trained, and widely used model that generates consistent sentence embeddings. This version is deterministic, meaning the same input will always produce the same output, regardless of the environment, as long as the model version remains the same. It is publicly available, easy to load from Github, and documented for clarity, making it straightforward for others to replicate experiments and results with the same setup.
 
 
 ## Social Science Usecase
