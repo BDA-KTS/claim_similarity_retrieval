@@ -15,7 +15,7 @@ This tool provides a practical solution for verifying information, combating mis
 Using the **paraphrase-MiniLM-L6-v2** model ensures reproducibility by providing a standardized, pre-trained, and widely used model that generates consistent sentence embeddings. This version is deterministic, meaning the same input will always produce the same output, regardless of the environment, as long as the model version remains the same. It is publicly available, easy to load from Github, and documented for clarity, making it straightforward for others to replicate experiments and results with the same setup.
 
 ## Keywords
-claimsKG, claims retrieval, fact-checked claims
+ClaimsKG, claims retrieval, fact-checked claims
 
 ## Social Science Use Case(s)
 
@@ -62,11 +62,11 @@ To utilize this tutorial effectively, follow these steps
 
 ## Input Data 
 There are two inputs that are expected to be a part of the method
-1. Source dataset: A collection of claims to retrieve similar claims from, for given user query. The default is [claim_similarity_dataset.tsv](https://github.com/BDA-KTS/claim_similarity_retrieval/blob/main/claim_similarity_dataset.tsv). 
+1. Source dataset: A collection of claims to retrieve similar claims from, for a given user query. The default is [claim_similarity_dataset.tsv](https://github.com/BDA-KTS/claim_similarity_retrieval/blob/main/claim_similarity_dataset.tsv). 
 2. User input query: The inputs a query against which similar claims are searched in the source dataset.
    
 ### Sample Input 
-1. Source dataset: The [claim_similarity_dataset.tsv](https://github.com/BDA-KTS/claim_similarity_retrieval/blob/main/claim_similarity_dataset.tsv) already present in the **claim_similarity_retrieval** method. 
+1. Source dataset: The [claim_similarity_dataset.tsv](https://github.com/BDA-KTS/claim_similarity_retrieval/blob/main/claim_similarity_dataset.tsv) already present in this method. 
 2. User input query: The user input query can be provided either by entering it when the script prompts for it:
    
     `Enter a sentence for similarity check (or press Enter to use a sample sentence): Musicians Robert Plant and Cher plan to wed at Westminster Abbey in July 2016.`
@@ -91,7 +91,7 @@ The table captures key details of similarity analysis between the input sentence
 This method may struggle with nuanced meanings and can be computationally intensive for large datasets. 
 
 ## Publication
-- Gangopadhyay, S., Boland, K., Dessí, D., Dietze, S., Fafalios, P., Tchechmedjiev, A., ... & Jabeen, H. (2023, May). Truth or dare: Investigating claims truthfulness with claimskg. In D2R2 2023-2nd International Workshop on Linked Data-driven Resilience Research (Vol. 3401).
+- Gangopadhyay, S., Boland, K., Dessí, D., Dietze, S., Fafalios, P., Tchechmedjiev, A., ... & Jabeen, H. (2023, May). Truth or dare: Investigating Claims Truthfulness with ClaimsKG. In D2R2 2023-2nd International Workshop on Linked Data-driven Resilience Research (Vol. 3401).
 
 ## Contact
 For questions or feedback, contact Susmita Gangopadhyay via [Susmita.Gangopadhyay@gesis.org](mailto: Susmita.Gangopadhyay@gesis.org).
