@@ -60,9 +60,6 @@ To utilize this tutorial effectively, follow these steps
    
 3. Output is generated as the top 3 relevant and similar claims along with their source, veracity level, and similarity score in a CSV file
 
-## References
-- Gangopadhyay, S., Boland, K., Dessí, D., Dietze, S., Fafalios, P., Tchechmedjiev, A., ... & Jabeen, H. (2023, May). Truth or dare: Investigating Claims Truthfulness with ClaimsKG. In D2R2 2023-2nd International Workshop on Linked Data-driven Resilience Research (Vol. 3401).
-
 ## Disclaimer
 This method may struggle with nuanced meanings and can be computationally intensive for large datasets. 
 
