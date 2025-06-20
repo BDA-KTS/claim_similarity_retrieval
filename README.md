@@ -68,6 +68,6 @@ This method may struggle with nuanced meanings and can be computationally intens
 
 
 ## Contact Details
-For questions or feedback, contact Susmita Gangopadhyay via [Susmita.Gangopadhyay@gesis.org](mailto: Susmita.Gangopadhyay@gesis.org).
+For questions or feedback, contact Susmita Gangopadhyay via [Susmita.Gangopadhyay@gesis.org](mailto:Susmita.Gangopadhyay@gesis.org).
 
 
