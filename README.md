@@ -32,7 +32,7 @@ The table captures key details of similarity analysis between the input query(ie
 *Note: *veracity of the claims i.e., its labels (as true, mostly true, false etc.) are not considered in evaluating semantic similarity.
 
 ## Hardware Requirements
-The method runs on a cheap virtual machine provided by cloud computing company (2 x86 CPU core, 4 GB RAM, 40GB HDD).
+The method runs on a small virtual machine provided by a cloud computing company (2 x86 CPU core, 4 GB RAM, 40GB HDD).
 
 ## Environment Setup
  - This method requires Python 3.9 to run.
