@@ -7,14 +7,14 @@ The method takes an input claim or sentence from the user, computes its similari
 
 ## Use Cases
 
-1. A social scientist focuses on misinformation in the social media discourse during political events and wants to verify the veracity of a fact-checked claim.
-2. A social scientist wants to find out if a claim/statement has been fact-checked before.
-3. A social scientist wants to find similar statements/claims that have been previously fact-checked
+1. Identifying misinformation in the social media discourse during political events to verify the veracity of fact-checked claims
+2. Finding claims/statements fact-checked before.
+3. Finding similar statements/claims that have been previously fact-checked
 
 ## Input Data 
 User input query: The method asks the user for input query as a sentence or phrase to retrieve claims similar to it. 
 
-Please note that the method use [claim_similarity_dataset.tsv](https://github.com/BDA-KTS/claim_similarity_retrieval/blob/main/claim_similarity_dataset.tsv) as the ClaimsKG source to retrieve similar claims. It is subject to change with the newer versions of ClaimsKG.   
+*Please note that the method use [claim_similarity_dataset.tsv](https://github.com/BDA-KTS/claim_similarity_retrieval/blob/main/claim_similarity_dataset.tsv) as the ClaimsKG source to retrieve similar claims. It is subject to change with the newer versions of ClaimsKG.*   
 
 
 ## Output Data 
@@ -59,6 +59,9 @@ This tool provides a practical solution for verifying information, combating mis
 
 The embedding model used in this method is [SentenceTransformer](https://github.com/UKPLab/sentence-transformers) with the [paraphrase-MiniLM-L6-v2](https://www.sbert.net/docs/sentence_transformer/pretrained_models.html) pre-trained model.
 Using the **paraphrase-MiniLM-L6-v2** model ensures reproducibility by providing a standardized, pre-trained, and widely used model that generates consistent sentence embeddings. This version is deterministic, meaning the same input will always produce the same output, regardless of the environment, as long as the model version remains the same. It is publicly available, easy to load from Github, and documented for clarity, making it straightforward for others to replicate experiments and results with the same setup.
+
+## References
+Gangopadhyay, S., Schellhammer, S., Hafid, S., Dessi, D., Koß, C., Todorov, K., ... & Jabeen, H. (2024, September). Investigating characteristics, biases and evolution of fact-checked claims on the web. In Proceedings of the 35th ACM Conference on Hypertext and Social Media (pp. 246-258).
 
 ## Disclaimer
 This method may struggle with nuanced meanings and can be computationally intensive for large datasets. 
