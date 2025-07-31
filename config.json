@@ -1,0 +1,11 @@
+{
+    "cutoff_by": "topK", 
+    "cutoff_values": ["topK", "threshold"],
+    "topK": 5,
+    "similarity_thresholds": 0.3,
+    "claims_dataset_path": "data/claimsKG_dataset.tsv",
+    "input_queries_path": "data/input_queries.txt",
+    "output_path": "data/similarity_results.tsv",
+    "claims_dataset_embeddings": "data/claims_with_embeddings.pkl",
+    "embedding_model": "paraphrase-MiniLM-L6-v2"
+}
